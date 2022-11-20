@@ -1,0 +1,152 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        html,body{
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            place-items: center;
+            background: linear-gradient(to right, #99004D 0%, #ff0080 100% );
+        }
+        .container{
+            background:#fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+        }
+        .container form .title{
+            font-size: 30px;
+            font-weight:600 ;
+            margin:20px 0 10px 0;
+        }
+        .container form .input-box{
+            width: 100%;
+            height: 45px;
+            margin-top:25px;
+            position: relative;
+        }
+        .container form .input-box input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-size: 16px;
+        }
+        .button{
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+        .container form .underline{
+            position:absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background:#ccc;
+            left:0;
+            bottom: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="register.php" method="POST">
+            <div class=title>Register</div>
+            <div class="input-box">
+              <input type="text" name="username" placeholder="username " required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="password" name="password" placeholder="Create Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Enter Your Name" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="number" name="phone"placeholder="Enter Your Phone Number" required>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="button">
+                Are you a <input type="radio" id="t1" name="type" value="student" required>
+                <label for="t1">Student</label> 
+                            <input type="radio" id="t2" name="type" value="Facuilty" required>
+                <label for="t2">Facuilty</label>            
+            </div>
+            <div class="input-box">
+                <input type="submit" value="register">
+            </div> 
+
+            <div class="input-box">
+              <a href="login.html">Login Account</a>
+          </div>
+        </form>    
+    </div>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title> register form form </title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="swayam">
+  <meta name="description" content="canteen app">
+  <meta name="keywords" content="canteen">
+  <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+
+  <style media="screen">
+    body{
+      text-align:center;
+      background:black;
+    }
+    span{
+      color:blue;
+    }
+    .register{
+      background :white;
+
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+
+  </header>
+<h1><span>Register Page</span></h1>
+  <main class="register">
+    <form action="register.php" method="POST"><br>
+        login id_____<input type="text" name="username" placeholder="create user name"><br><br>
+        password____<input type="password" name="password" placeholder="create password"><br><br>
+        confirm password___<input type="password" name="confirm_password" placeholder="retype password"><br><br>
+        enter your name___<input type="text" name="name" placeholder="enter name"><br><br>
+        phone number____<input type="number" name="phone"placeholder="enter phone number"><br><br>
+        address_____<input type="text" name="address"placeholder="enter address"><br><br>
+        Are you a <input type="radio" name="type" value="Customer" >customer
+        <input type="radio" name="type" value="Shop" >shopkeeper<br><br>
+        <input type="submit" value="register" >
+        <a href="login.html">login</a>
+      </form><br><br>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+-->
